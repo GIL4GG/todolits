@@ -1,0 +1,151 @@
+/* Aturan umum untuk body */
+body { 
+    background: linear-gradient(135deg, #00eeff, #0004ff); 
+    font-family: 'Poppins', sans-serif; 
+    min-height: 100vh;
+}
+
+/* Login container */
+.login-container { 
+    max-width: 420px; 
+    margin: 0 auto;
+    padding: 25px; 
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.login-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Register container */
+.register-container { 
+    max-width: 350px;
+    margin: 30px auto;
+    padding: 30px; 
+    background: white;
+    border-radius: 12px; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); 
+    text-align: left;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.text-muted {
+    text-align: center;
+}
+
+.register-container h2 {
+    font-size: 2rem;
+    color: #007aff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Pesan selamat datang */
+.welcome-text { 
+    text-align: center;
+    color: #007aff; 
+    font-size: 2rem; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+/* Deskripsi aplikasi */
+.description {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pesan harian */
+.bg-message {
+    background: #007aff;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form controls dan tombol */
+.form-control, .btn {
+    border-radius: 8px;
+}
+
+.btn-primary { 
+    background-color: #007aff; 
+    border: none; 
+    transition: all 0.3s;
+}
+
+.btn-primary:hover { 
+    transform: scale(1.05); 
+    background-color: #005ecb;
+}
+
+/* Button khusus untuk register */
+.register-container .btn-primary {
+    background-color: #007aff;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.register-container .btn-primary:hover {
+    background-color: #0055cc;
+    transform: translateY(-2px);
+}
+
+/* Alert messages */
+.alert { 
+    margin-bottom: 15px; 
+    font-weight: bold; 
+}
+
+/* Input groups */
+.input-group-text { 
+    background: #007aff; 
+    color: white; 
+    border-radius: 8px 0 0 8px; 
+}
+
+/* Toggle password button */
+.toggle-password i { 
+    font-size: 1.25rem; 
+    cursor: pointer; 
+    color: #007aff;
+}
+
+.toggle-password:hover i {
+    color: #005ecb;
+}
+
+/* Animation */
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(-20px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+/* Responsive styles */
+@media (max-width: 575px) {
+    .login-container {
+        padding: 15px;
+    }
+    
+    .register-container {
+        padding: 20px;
+    }
+}
